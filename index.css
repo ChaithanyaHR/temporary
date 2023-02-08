@@ -1,0 +1,95 @@
+/* Body styles */
+
+body {
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* This is to remove the space between html and body */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header styles */
+
+.header {
+  padding: 30px;
+  background-color: #76323F;
+}
+
+h1 {
+  display: inline-block;
+  width: 30%;
+  font-size: 24px;
+}
+
+#yes-btn {
+  display: inline-block;
+  margin: 0;
+}
+
+.questions {
+  display: 'none';
+}
+
+.options {
+  padding: 30px;
+}
+
+.result {
+  color: black;
+  padding: 30px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+
+.game-btn {
+  min-width: 120px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #28b351;
+  border: none;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#no-btn {
+  background-color: #f15e5e;
+}
+
+@media only screen and (min-width: 1008px) and (max-width: 1140px) {
+  #difficulty-slider {
+    width: 90px;
+  }
+
+  #help-btn {
+    font-size: 0;
+  }
+
+  #help-btn::before {
+    float: right;
+    position: relative;
+    top: 5px;
+    font-size: 16px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f059";
+    font-weight: 900;
+  }
+}
+
+@media only screen and (max-width: 1008px) {
+  h1 {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  #screen-message {
+    display: block;
+  }
+}
+
+
